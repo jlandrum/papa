@@ -1,4 +1,5 @@
 import {StyleSheet} from 'react-native';
+import {sizeUnit} from '../Const';
 
 export default StyleSheet.create({
   root: {
@@ -16,13 +17,17 @@ export default StyleSheet.create({
   },
   headerText: {
     fontSize: 24,
-    margin: 8,
+    margin: sizeUnit,
   },
   headerSubText: {
     fontSize: 14,
   },
+  button: {
+    margin: sizeUnit,
+  },
   version: {
     alignSelf: 'center',
+    margin: sizeUnit,
     fontSize: 10,
     color: 'hsl(0, 0%, 50%)',
   },

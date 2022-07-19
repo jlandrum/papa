@@ -43,7 +43,7 @@ const ListScreen = ({navigation}: ListScreenProps) => {
   const insets = useSafeAreaInsets();
 
   const sortedData = [...(data?.launches || [])]
-    .sort((a, b) => a.launch_date_unix - b.launch_date_unix)
+    .sort((a, b) => b.launch_date_unix - a.launch_date_unix)
     .reduce(
       (p, c) => {
         if (c.launch_date_unix < Date.now()) {

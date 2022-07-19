@@ -25,7 +25,9 @@ const HomeScreen = ({navigation}: HomeScreenProps) => {
         <Text style={Styles.headerText}>SpaceX Launches</Text>
         <Text style={Styles.headerSubText}>Welcome to the app</Text>
       </View>
-      <Button title="Continue" onPress={() => navigation.replace('List')} />
+      <View style={Styles.button}>
+        <Button title="Continue" onPress={() => navigation.replace('List')} />
+      </View>
       <Text style={Styles.version}>Version 0.0.1</Text>
     </View>
   );

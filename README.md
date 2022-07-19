@@ -19,3 +19,8 @@ You may need to follow the additional steps at https://github.com/lottie-react-n
 # Running
 This is a run-of-the-mill React Native app and should be as simple as
 running `npm run ios` or `npm run android`
+
+# Features
+* See a list of previous and upcoming SpaceX Launches
+* View details about SpaceX missions
+* See how much each rocket weighs in elephants
