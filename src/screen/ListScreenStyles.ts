@@ -23,4 +23,9 @@ export default StyleSheet.create({
     borderRadius: sizeUnit / 2,
     backgroundColor: Colors.white,
   },
+  listItemText: {
+    fontSize: 15,
+    fontWeight: '600',
+    marginBottom: sizeUnit / 2,
+  }
 });

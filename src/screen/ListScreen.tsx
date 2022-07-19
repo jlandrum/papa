@@ -17,10 +17,10 @@ const renderListItem =
       <View style={Style.listItem}>
         <TouchableOpacity
           onPress={() => navigation.navigate('Details', {mission: item})}>
+          <Text style={Style.listItemText}>{item.mission_name}</Text>
           <Text>
-            {new Date(item.launch_date_local)?.toLocaleDateString?.()}
+            {new Date(item.launch_date_unix * 1000)?.toLocaleDateString?.()}
           </Text>
-          <Text>{item.mission_name}</Text>
         </TouchableOpacity>
       </View>
     );
@@ -33,7 +33,7 @@ interface SectionHeaderRender {
 
 const renderSectionHeader = ({section: {header}}: SectionHeaderRender) => (
   <View>
-    <Text style={Style.listHeader}>{header}</Text>
+    <Text style={Style.listHeader}>{header} Launches</Text>
     <View style={Style.listHeaderBorder} />
   </View>
 );
