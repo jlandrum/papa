@@ -27,5 +27,5 @@ export default StyleSheet.create({
     fontSize: 15,
     fontWeight: '600',
     marginBottom: sizeUnit / 2,
-  }
+  },
 });
